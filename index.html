@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nemaki | Spring 2026 Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-mark" href="index.html">Nemaki</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-overlay">
+        Menu
+      </button>
+    </header>
+
+    <aside id="menu-overlay" class="menu-overlay" aria-hidden="true">
+      <nav class="overlay-nav">
+        <a href="shop.html">Shop</a>
+        <a href="#story">About</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <img
+          src="https://images.unsplash.com/photo-1465408953385-7c46288bd84e?auto=format&fit=crop&w=1800&q=80"
+          alt="Nemaki spring collection"
+        />
+        <div class="hero-content">
+          <h1>Nemaki</h1>
+          <p>Spring 2026 Collection</p>
+          <a class="cta" href="shop.html">Explore</a>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-head">
+          <h2>Featured Collection</h2>
+        </div>
+        <div id="featured-grid" class="product-grid"></div>
+      </section>
+
+      <section id="story" class="story section-block">
+        <div class="story-copy">
+          <h2>Quiet Forms, Lasting Lines</h2>
+          <p>
+            Nemaki creates refined essentials for everyday rituals. We work with understated forms,
+            textured fabrics, and calm palettes to shape garments that feel timeless and lived in.
+          </p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80"
+          alt="Lifestyle editorial"
+        />
+      </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="#story">About</a>
+        <a href="#footer">Contact</a>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+      <form class="newsletter" action="#" method="post">
+        <label for="email">Newsletter</label>
+        <div>
+          <input id="email" type="email" placeholder="Email address" required />
+          <button type="submit">Join</button>
+        </div>
+      </form>
+      <p>© Nemaki</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
